@@ -77,11 +77,11 @@
             document.getElementById("minuto").innerText = ("0" + minutos).slice(-2);
             document.getElementById("segundo").innerText = ("0" + segundos).slice(-2);
 
-            document.getElementById("p-mes").innerText = meses === 1 ? "Mês" : "Meses";
-            document.getElementById("p-dia").innerText = dias === 1 ? "Dia" : "Dias";
-            document.getElementById("p-hora").innerText = horas === 1 ? "Hora" : "Horas";
-            document.getElementById("p-minuto").innerText = minutos === 1 ? "Minuto" : "Minutos";
-            document.getElementById("p-segundo").innerText = segundos === 1 ? "Segundo" : "Segundos";
+            document.getElementById("p-mes").innerText = meses <= 1 ? "Mês" : "Meses";
+            document.getElementById("p-dia").innerText = dias <= 1 ? "Dia" : "Dias";
+            document.getElementById("p-hora").innerText = horas <= 1 ? "Hora" : "Horas";
+            document.getElementById("p-minuto").innerText = minutos <= 1 ? "Minuto" : "Minutos";
+            document.getElementById("p-segundo").innerText = segundos <= 1 ? "Segundo" : "Segundos";
 
         }
 
